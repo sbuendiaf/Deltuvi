@@ -1,0 +1,74 @@
+/* Estilos para Layout */
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Permite que el contenido principal crezca */
+}
+
+/* Estilo para el footer */
+footer {
+    margin-top: auto;
+    /* Empuja el footer hacia abajo */
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+/* Estilos para el Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav strong {
+    font-size: 1.5rem;
+}
+
+/* Icono del menú en dispositivos móviles */
+nav .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+
+    /* Mostrar el menú toggle en pantallas pequeñas */
+    nav .menu-toggle {
+        display: block;
+    }
+
+    /* Opciones del menú desplegable */
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        position: absolute;
+        right: 2%;
+        top: calc(100% + 0.5rem);
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem 0 0 0.5rem;
+        padding: 1rem;
+    }
+
+    nav .menu.collapsed {
+        display: flex;
+        /* Mostrar menú desplegable cuando se active */
+    }
+}
