@@ -1,0 +1,60 @@
+.carousel {
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto; /* Ajusta dinámicamente la altura según la imagen */
+    object-fit: contain; /* Asegura que las imágenes no se corten */
+  }
+  .carousel-slide {
+    width: 100%;
+    height: 100%;
+    background-size: contain; /* Contiene toda la imagen sin recortarla */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+  }
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Flecha izquierda */
+.carousel-button.prev {
+    left: 10px;
+}
+
+/* Flecha derecha */
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Estilo al pasar el mouse sobre los botones */
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

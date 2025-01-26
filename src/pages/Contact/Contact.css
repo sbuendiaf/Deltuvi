@@ -1,0 +1,40 @@
+/* Estilos de la sección de contacto */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("C:\Users\sbuen\deltuviWeb\deltuviWeb\src\assets\images\reunionImage.jpeg");
+    /* Cambia por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    /* Ajusta la altura como prefieras */
+    color: white;
+    padding: 20px;
+}
+
+.contact-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.contact-content h1 {
+    font-size: 3rem;
+    /* Ajusta el tamaño del título */
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    /* Tamaño del texto descriptivo */
+    line-height: 1.6;
+}
+@media (max-width: 768px){
+    .contact-section{
+        height: 30vh;
+    }
+}

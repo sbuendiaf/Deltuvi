@@ -4,7 +4,7 @@ import Layout from './components/Layout/Layout'; // Layout con navegación y foo
 import Home from './pages/Home';
 import About from './pages/About';
 import Courses from './pages/Courses';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import "./App.css"
 
 function App() {
